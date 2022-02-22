@@ -15,6 +15,9 @@
 .list {
   list-style: none;
 }
+.link {
+  text-decoration: none;
+}
 .main-part {
   background-color: var(--primary-background);
   color: var(--primary-text-color);
@@ -189,6 +192,11 @@ img {
 /* Sections */
 .heading {
   text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .list .studio {
   margin-bottom: 10px;
@@ -206,6 +214,20 @@ img {
   margin-bottom: 50px;
 }
 /* Advantages section */
+.benefit {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.studio {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+}
 .list-advantage {
   display: flex;
 }
@@ -267,6 +289,13 @@ img {
 .member-card {
   padding: 30px 0px;
 }
+.position {
+  font-size: 16px;
+  line-height: 19p1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
 .section-team {
   background-color: var(--team-background-color);
   padding-bottom: 94px;
@@ -274,7 +303,6 @@ img {
 .social-list {
   display: flex;
   justify-content: center;
-  margin-top: 16px;
 }
 .social-list-link {
   display: flex;
@@ -283,7 +311,6 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  margin-top: 16px;
 }
 .social-list-item:not(:last-child) {
   margin-right: 10px;
@@ -314,7 +341,7 @@ img {
   border: 1px solid var(--icons-color);
   border-radius: 4px;
 }
-.clients-item:not(last-child) {
+.clients-item:not(:last-child) {
   margin-right: 30px;
 }
 .clients-icon {
@@ -384,12 +411,11 @@ img {
   margin-bottom: 20px;
   font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--hero-color);
 }
-
 .appeal-list {
   display: flex;
 }
@@ -454,17 +480,25 @@ img {
 .flex-button:not(:last-child) {
   margin-right: 8px;
 }
-.flex-element .portfolio {
-  padding: 0px 24px;
-}
-.flex-element .description-item {
-  padding: 0px 24px;
-}
 .flex-element:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+/* .flex-link:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+} */
 .project-card {
-  padding: 20px 0px;
+  padding: 20px 24px;
+}
+.portfolio {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.project {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
 }
 .flex-portfolio {
   display: flex;
