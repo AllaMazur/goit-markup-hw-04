@@ -110,9 +110,6 @@ img {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
-.site-nav .link.current {
-  color: var(--accent-color);
-}
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
@@ -270,6 +267,28 @@ img {
 .section-item {
   color: var(--primary-text-color);
 }
+.offer-thumb {
+  position: relative;
+}
+.offer-thumb::before {
+  position: absolute;
+  bottom: 0px;
+  content: "";
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.offer {
+  position: absolute;
+  bottom: 0px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--hero-color);
+}
 /* Team section */
 .flex-member {
   width: 270px;
@@ -352,15 +371,14 @@ img {
 .clients-item:not(:last-child) {
   margin-right: 30px;
 }
-.clients-icon {
+.clients-link {
+  border-color: var(--icons-color);
   fill: var(--icons-color);
 }
 .clients-link:hover,
 .clients-link:focus {
   border-color: var(--accent-color);
   cursor: pointer;
-}
-.clients-item:hover .clients-icon {
   fill: var(--accent-color);
 }
 /* Footer */
